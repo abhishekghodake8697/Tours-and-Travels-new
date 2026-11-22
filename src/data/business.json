@@ -1,20 +1,20 @@
 {
-  "name": "Royal Wheels Travels",
-  "tagline": "Premium Bus & Coach Rentals with Professional Drivers",
-  "shortAbout": "We provide premium, comfortable, and reliable bus rentals for local and outstation journeys across India. Every booking includes a verified, experienced chauffeur.",
-  "fullAbout": "Founded with a vision to redefine group travel, Royal Wheels Travels delivers punctual, hygienic, and luxurious transportation for families, corporations, schools, and tour groups. With a modern fleet ranging from 17-seater luxury minibuses to 55-seater executive air-conditioned coaches, we ensure every mile is safe, comfortable, and memorable.",
-  "philosophy": "Your safety, comfort, and peace of mind are our highest priorities. We treat every traveler like royalty.",
-  "safetyPromise": "All our vehicles undergo multi-point safety inspections before departure, feature GPS tracking, speed governors, emergency exits, and are piloted by certified chauffeurs with over 7+ years of highway experience.",
-  "phone": "+91 98765 43210",
-  "phoneSecondary": "+91 98765 43211",
-  "whatsapp": "+919876543210",
-  "email": "bookings@royalwheelstravels.com",
-  "address": "Shop 12-14, Imperial Commercial Complex, Ring Road",
-  "city": "Bengaluru",
-  "state": "Karnataka",
-  "pincode": "560034",
-  "workingHours": "24/7 Operations & Road Assistance (Booking Desk: 7:00 AM - 11:00 PM)",
-  "googleMapsUrl": "https://maps.google.com/?q=Bengaluru",
+  "name": "Prabhas Tours and Travels",
+  "tagline": "Travel with Comfort, Return with Memories!",
+  "shortAbout": "Your trusted travel partner for a comfortable, safe and memorable journey. Prabhas Tours and Travels makes every journey special!",
+  "fullAbout": "Prabhas Tours and Travels is your trusted travel partner based in Lasurne, Tal. Indapur, Dist. Pune, Maharashtra. We offer domestic tour packages for families, groups, students and corporate tours, complete booking facility for all types of tours and travel arrangements, travel management for corporate and private clients, hygienic vegetarian meal arrangements, and experienced, polite drivers for a safe journey.",
+  "philosophy": "Your journey, our responsibility. We make travel memorable!",
+  "safetyPromise": "All our vehicles are clean, well maintained and inspected before every trip. Our experienced and polite drivers ensure punctuality, reliability, and your safety throughout the journey.",
+  "phone": "+91 7796915915",
+  "phoneSecondary": "+91 7796915915",
+  "whatsapp": "+917796915915",
+  "email": "info@prabhastoursandtravels.com",
+  "address": "Lasurne, Tal. Indapur",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "pincode": "413106",
+  "workingHours": "24/7 Operations & Road Assistance",
+  "googleMapsUrl": "https://maps.google.com/?q=Lasurne+Indapur+Pune+Maharashtra",
   "socialLinks": {
     "facebook": "https://facebook.com",
     "instagram": "https://instagram.com",
@@ -22,9 +22,9 @@
     "youtube": "https://youtube.com"
   },
   "stats": {
-    "busesCount": 24,
-    "experienceYears": 12,
-    "tripsCompleted": 8500,
-    "happyCustomers": 45000
+    "busesCount": 10,
+    "experienceYears": 8,
+    "tripsCompleted": 5000,
+    "happyCustomers": 20000
   }
 }
