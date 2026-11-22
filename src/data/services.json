@@ -1,0 +1,122 @@
+[
+  {
+    "id": "service-local",
+    "title": "Local Bus Rental",
+    "slug": "local-bus-rental",
+    "shortDescription": "Full-day & half-day intra-city rentals for sightseeing, guest movements, and local celebrations.",
+    "description": "Navigate the city with zero parking stress or convoy coordination headaches. Our experienced drivers know all local routes, flyovers, and event venues.",
+    "icon": "MapPin",
+    "highlights": [
+      "Flexible hourly or 8hr/80km packages",
+      "Stress-free pickup from multiple city stops",
+      "Zero hassle with city parking & tolls",
+      "Air-conditioned coolness throughout"
+    ],
+    "idealFor": "City tours, shopping sprees, family reunions, and airport group transfers."
+  },
+  {
+    "id": "service-outstation",
+    "title": "Outstation Trips",
+    "slug": "outstation-trips",
+    "shortDescription": "Intercity and interstate travel up to 250 KM and beyond with tested highway captains.",
+    "description": "Explore new destinations, scenic hill stations, and heritage trails with total peace of mind. We take care of state permits, safe speed limits, and route logistics.",
+    "icon": "Navigation",
+    "highlights": [
+      "Transparent Per-KM & Fixed-Day pricing",
+      "Highways-certified commercial chauffeurs",
+      "Reclining push-back seats with calf rests",
+      "Multi-day tour scheduling flexibility"
+    ],
+    "idealFor": "Weekend getaways, multi-city expeditions, and out-of-town celebrations."
+  },
+  {
+    "id": "service-wedding",
+    "title": "Wedding & Event Transportation",
+    "slug": "wedding-event-transportation",
+    "shortDescription": "Punctual, spotless guest shuttles between hotels, banquet halls, and wedding venues.",
+    "description": "Keep your baraat, relatives, and VIP guests moving on time without anyone getting lost. Decorated and sanitized coaches available on demand.",
+    "icon": "HeartHandshake",
+    "highlights": [
+      "Dedicated transport coordinator support",
+      "Spotlessly sanitized buses inside & out",
+      "Flexible schedule buffer for wedding delays",
+      "Co-driver support for late-night hospitality"
+    ],
+    "idealFor": "Baraat processions, airport-to-resort transfers, sangeet party logistics."
+  },
+  {
+    "id": "service-corporate",
+    "title": "Corporate Travel & Offsites",
+    "slug": "corporate-travel",
+    "shortDescription": "Executive team offsites, leadership retreats, conference shuttles, and tech park commutes.",
+    "description": "Elevate your enterprise transit with premium Wi-Fi/charging enabled coaches, professional uniformed drivers, and corporate GST invoicing.",
+    "icon": "Briefcase",
+    "highlights": [
+      "100% On-time SLA guarantee",
+      "GST-compliant automated invoicing",
+      "Executive coaches with onboard charging",
+      "Non-disclosure & corporate privacy compliance"
+    ],
+    "idealFor": "Team offsites, client delegation pickups, annual general meetings, expos."
+  },
+  {
+    "id": "service-family",
+    "title": "Family Trips & Picnics",
+    "slug": "family-trips",
+    "shortDescription": "Spacious, comfortable group travel where three generations can journey together happily.",
+    "description": "Say goodbye to driving 4 separate cars and missing out on family laughter. Enjoy music, games, and laughter on board with our patient drivers.",
+    "icon": "Users",
+    "highlights": [
+      "Elderly-friendly low step entry",
+      "Spacious legroom and luggage storage",
+      "Frequent rest stop coordination",
+      "Custom music and movie playback"
+    ],
+    "idealFor": "Family picnics, milestone birthdays, anniversary getaways, temple darshans."
+  },
+  {
+    "id": "service-school",
+    "title": "School & College Trips",
+    "slug": "school-college-trips",
+    "shortDescription": "Safe, verified transport for student field visits, educational tours, and sports tournaments.",
+    "description": "Nothing comes before child safety. Our fleet is equipped with speed governors, mandatory emergency exits, first-aid kits, and thoroughly vetted drivers.",
+    "icon": "GraduationCap",
+    "highlights": [
+      "Government compliant speed limiters (80 km/h)",
+      "Strict background-verified chauffeurs",
+      "Active GPS tracking link for parents & teachers",
+      "Child safety first-aid on board"
+    ],
+    "idealFor": "Museum visits, science center tours, scout camps, inter-school tournaments."
+  },
+  {
+    "id": "service-group",
+    "title": "Group Tours & Pilgrimages",
+    "slug": "group-tours-pilgrimages",
+    "shortDescription": "Curated journeys to holy shrines, historic temples, and group spiritual retreats.",
+    "description": "Complete your darshan with peaceful minds. Our chauffeurs are familiar with temple protocols, mountain hairpin bends, and proper parking zones.",
+    "icon": "Compass",
+    "highlights": [
+      "Extensive experience in pilgrimage corridors",
+      "Patience for early morning darshan timings",
+      "Spacious luggage boots for prasad & offerings",
+      "Comfortable night travel provisions"
+    ],
+    "idealFor": "Tirupati, Shirdi, Madurai, Varanasi, Char Dham, and ashram groups."
+  },
+  {
+    "id": "service-oneday",
+    "title": "One-Day Trips (Up to 250 KM)",
+    "slug": "one-day-trips",
+    "shortDescription": "Quick sunrise-to-sunset escapes with transparent fixed package pricing.",
+    "description": "Designed for our signature 250 KM package. Head out in the morning, explore waterfalls, resorts or theme parks, and return by dinner time without surprise bills.",
+    "icon": "Sun",
+    "highlights": [
+      "Fixed all-inclusive day package pricing",
+      "Covers up to 250 KM and 12 continuous hours",
+      "Pick-up right at your residential society",
+      "Zero hidden driver surcharge"
+    ],
+    "idealFor": "Theme park days, hill trek bases, vineyard visits, resort day-passes."
+  }
+]

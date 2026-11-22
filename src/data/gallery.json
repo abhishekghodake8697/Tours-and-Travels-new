@@ -1,0 +1,56 @@
+[
+  {
+    "id": "gal-1",
+    "title": "Ooty & Nilgiri Hills Expedition",
+    "destination": "Ooty & Coonoor, Tamil Nadu",
+    "category": "outstation",
+    "date": "October 2025",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "description": "32-seater luxury coach navigating the 36 hairpin bends of Nilgiris with steady ease for a family reunion tour."
+  },
+  {
+    "id": "gal-2",
+    "title": "Grand Royal Palace Wedding",
+    "destination": "Mysuru, Karnataka",
+    "category": "wedding",
+    "date": "December 2025",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+    "description": "Convoy of 3 luxury executive buses transporting 120 baraat guests with floral decor and punctual ceremony arrivals."
+  },
+  {
+    "id": "gal-3",
+    "title": "FinTech Annual Strategy Summit",
+    "destination": "Coorg (Kodagu), Karnataka",
+    "category": "corporate",
+    "date": "January 2026",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+    "description": "55-seater multi-axle cruiser carrying engineering teams for a 3-day coffee plantation brainstorming offsite."
+  },
+  {
+    "id": "gal-4",
+    "title": "Tirupati Temple Darshan Group",
+    "destination": "Tirumala Hills, Andhra Pradesh",
+    "category": "pilgrimage",
+    "date": "February 2026",
+    "image": "https://images.unsplash.com/photo-1590077428593-a55bb07c4665?auto=format&fit=crop&w=1200&q=80",
+    "description": "Elderly-friendly 26-seater mini coach trip with low-step access and round-the-clock driver assistance."
+  },
+  {
+    "id": "gal-5",
+    "title": "Goa Coastal Beach Escape",
+    "destination": "South Goa & Calangute",
+    "category": "tour",
+    "date": "March 2026",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "description": "College graduating batch road trip with high-bass surround music and beachside sunset memories."
+  },
+  {
+    "id": "gal-6",
+    "title": "Hampi UNESCO Heritage Tour",
+    "destination": "Hampi Ruins, Karnataka",
+    "category": "tour",
+    "date": "April 2026",
+    "image": "https://images.unsplash.com/photo-1600100397608-f010f443b71a?auto=format&fit=crop&w=1200&q=80",
+    "description": "Historical architecture study expedition for 45 students with smooth air-conditioned respite from the afternoon sun."
+  }
+]

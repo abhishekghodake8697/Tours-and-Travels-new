@@ -1,0 +1,140 @@
+[
+  {
+    "id": "bus-17-tempo",
+    "name": "17-Seater Luxury Force Urbania / Traveller",
+    "category": "mini",
+    "seatingCapacity": 17,
+    "isAc": true,
+    "features": [
+      "Reclining Executive Seats with Armrests",
+      "Individual AC Air Vents & Reading Lights",
+      "USB Fast Charging at Every Row",
+      "Surround Bluetooth Sound System",
+      "Wide Panoramic Windows with Curtains",
+      "GPS Tracking & Speed Governor"
+    ],
+    "luggageCapacity": "12-14 Medium Suitcases + Overhead Racks",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80",
+    "description": "Ideal for tight family groups, VIP corporate delegations, and airport transfers with unmatched cabin quietness.",
+    "badge": "Popular for Families",
+    "customPerKmRate": 22,
+    "customDayPackagePrice": 5499
+  },
+  {
+    "id": "bus-26-mini",
+    "name": "26-Seater Executive Mini Coach",
+    "category": "mini",
+    "seatingCapacity": 26,
+    "isAc": true,
+    "features": [
+      "Ergonomic 2x1 Push-Back Seating",
+      "Climate Controlled Super-Cool AC",
+      "LED TV with Multimedia Player",
+      "Overhead Cabin Storage",
+      "Spacious Rear Luggage Boot",
+      "Verified Uniformed Chauffeur"
+    ],
+    "luggageCapacity": "20-22 Standard Bags",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    "description": "Perfect balance of agility and space. Effortlessly navigates both city roads and scenic mountain passes.",
+    "badge": "Best for Hill Stations",
+    "customPerKmRate": 25,
+    "customDayPackagePrice": 6299
+  },
+  {
+    "id": "bus-32-ac",
+    "name": "32-Seater Premium Luxury AC Bus",
+    "category": "standard",
+    "seatingCapacity": 32,
+    "isAc": true,
+    "features": [
+      "Luxury High-Back Plush Push-Back Seats",
+      "Chilled Dual-Compressor AC",
+      "32\" HD TV with Karaoke & Mic System",
+      "Spacious Under-Deck Luggage Compartment",
+      "First Aid Kit & Fire Extinguisher",
+      "Experienced Highway Pilot"
+    ],
+    "luggageCapacity": "30-35 Large Suitcases",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+    "description": "The golden standard for wedding guest shuttles, corporate team offsites, and medium-sized pilgrimage journeys.",
+    "badge": "Top Recommended",
+    "customPerKmRate": 28,
+    "customDayPackagePrice": 7199
+  },
+  {
+    "id": "bus-45-deluxe",
+    "name": "45-Seater Grand Deluxe Tourist Coach",
+    "category": "luxury",
+    "seatingCapacity": 45,
+    "isAc": true,
+    "features": [
+      "2x2 Continental Reclining Seats with Footrests",
+      "Air Suspension for Whisper-Quiet Glide",
+      "Dual LED Entertainment Displays",
+      "Underfloor Cargo Bay (Mega Luggage)",
+      "Speed Controlled & GPS Monitored",
+      "Co-Driver / Cleaner Assistant on Request"
+    ],
+    "luggageCapacity": "45+ Large Suitcases",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=80",
+    "description": "Engineered for long-distance comfort with whisper-smooth air suspension to keep your entire party relaxed.",
+    "badge": "Corporate & Tours Choice",
+    "customPerKmRate": 34,
+    "customDayPackagePrice": 8899
+  },
+  {
+    "id": "bus-55-volvo",
+    "name": "55-Seater Multi-Axle Luxury Cruiser",
+    "category": "luxury",
+    "seatingCapacity": 55,
+    "isAc": true,
+    "features": [
+      "Ultra-Plush Semi-Sleeper Calf-Support Seats",
+      "Multi-Zone Climate Control",
+      "Air-Bellow Suspension for Total Comfort",
+      "Dedicated Mega Luggage Cargo Bay",
+      "Emergency Exits & CCTV Cabin Security",
+      "Top-Tier Master Highway Captain"
+    ],
+    "luggageCapacity": "55+ Heavy Stowed Luggage",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&w=1200&q=80",
+    "description": "Our flagship interstate cruiser for mega corporate conventions, university tours, and grand wedding entourage travel.",
+    "badge": "Flagship Luxury",
+    "customPerKmRate": 42,
+    "customDayPackagePrice": 10999
+  },
+  {
+    "id": "bus-40-nonac",
+    "name": "40-Seater Standard Non-AC Tourist Bus",
+    "category": "standard",
+    "seatingCapacity": 40,
+    "isAc": false,
+    "features": [
+      "Comfortable High-Back Cushioned Seating",
+      "Wide Sliding Windows with Air Flow",
+      "Audio Speaker System",
+      "Spacious Central Aisle",
+      "Heavy Luggage Carrier on Roof & Boot",
+      "Experienced Senior Driver"
+    ],
+    "luggageCapacity": "35-40 Travel Bags",
+    "driverIncluded": true,
+    "isActive": true,
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    "description": "High value and maximum economy for school field trips, factory staff day-outs, and budget group excursions.",
+    "badge": "Budget Friendly",
+    "customPerKmRate": 20,
+    "customDayPackagePrice": 4999
+  }
+]

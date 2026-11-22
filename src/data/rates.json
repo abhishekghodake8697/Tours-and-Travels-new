@@ -1,0 +1,20 @@
+{
+  "currency": "₹",
+  "perKmRate": 25,
+  "perKmMinDistance": 250,
+  "dayPackagePrice": 6299,
+  "dayPackageKmLimit": 250,
+  "extraKmRate": 26,
+  "driverAllowancePerDay": 500,
+  "nightHaltCharge": 700,
+  "terms": [
+    "Professional commercial driver included in every rental package.",
+    "Tolls, state entry permits, and parking fees are charged on actuals.",
+    "Fixed Day Package covers up to 12 hours and 250 KM from garage to garage.",
+    "Extra distance beyond 250 KM is billed at ₹26 per kilometer.",
+    "Night halt allowance (₹700) applies for journeys crossing 11:00 PM.",
+    "Air-conditioned coaches maintain optimal cooling throughout the route.",
+    "Luggage space is complimentary up to vehicle specified capacity."
+  ],
+  "notes": "Prices shown on the website are estimated quotes for standard planning. Final quotation is confirmed upon route review and date availability."
+}

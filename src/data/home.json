@@ -1,0 +1,49 @@
+{
+  "heroHeadline": "Reliable Bus Rentals for Every Journey",
+  "heroSubheadline": "Premium air-conditioned buses and luxury coaches with verified professional drivers. Designed for seamless local outings, weddings, corporate retreats, and outstation trips within 250 KM & beyond.",
+  "heroHighlightBadge": "★ 100% Verified Drivers Included • Up to 250 KM Day Packages",
+  "primaryCtaText": "Calculate Fare & Get Quote",
+  "secondaryCtaText": "Chat on WhatsApp",
+  "whyChooseUs": [
+    {
+      "title": "Experienced Highway Drivers",
+      "description": "Every trip is piloted by verified, courteous chauffeurs with minimum 7+ years of interstate and hill-station driving mastery.",
+      "icon": "UserCheck"
+    },
+    {
+      "title": "Pristine, Modern Fleet",
+      "description": "Thoroughly sanitized, multi-point inspected coaches featuring plush reclining seats, chilled AC, and onboard charging.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Transparent No-Surprise Pricing",
+      "description": "Honest per-KM rates and all-inclusive fixed 250 KM day packages. Clear breakdown of fuel, driver, and extra distance.",
+      "icon": "BadgePercent"
+    },
+    {
+      "title": "Zero Driving Fatigue",
+      "description": "Relax with your friends, family, or colleagues while our professional drivers handle traffic, highways, and parking.",
+      "icon": "Armchair"
+    },
+    {
+      "title": "100% Punctuality Guarantee",
+      "description": "Vehicles arrive 20 minutes before scheduled departure time with clean cabins, fresh headrest covers, and chilled air conditioning.",
+      "icon": "Clock"
+    },
+    {
+      "title": "Flexible Custom Packages",
+      "description": "Whether you need a quick 4-hour city hop, a 250 KM same-day picnic, or a 7-day multi-state pilgrimage, we tailor the itinerary.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "24/7 Road & Trip Support",
+      "description": "Live GPS tracking and a round-the-clock operations desk to assist you before, during, and after your travel.",
+      "icon": "Headphones"
+    },
+    {
+      "title": "Professional Commercial Permits",
+      "description": "Complete statutory compliance with commercial tourist permits, comprehensive passenger insurance, and fitness certificates.",
+      "icon": "FileCheck"
+    }
+  ]
+}
