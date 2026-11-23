@@ -1,7 +1,7 @@
 import { IDataRepository } from "./types";
-import { FileDataRepository } from "./file-repository";
+import { FirestoreRepository } from "./firestore-repository";
 
-// Export singleton instance. Can be swapped with a DatabaseRepository, SupabaseRepository, etc. later without touching UI!
-export const repository: IDataRepository = new FileDataRepository();
+// Singleton backed by Firestore — works on Vercel and any serverless runtime.
+export const repository: IDataRepository = new FirestoreRepository();
 
 export * from "./types";
