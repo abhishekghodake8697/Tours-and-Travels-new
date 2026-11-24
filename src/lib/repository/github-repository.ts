@@ -59,6 +59,7 @@ export class GitHubRepository implements IDataRepository {
       Authorization: `Bearer ${this.token}`,
       Accept: "application/vnd.github.v3+json",
       "Content-Type": "application/json",
+      "User-Agent": "tours-and-travels-admin/1.0",
     };
   }
 
@@ -137,7 +138,9 @@ export class GitHubRepository implements IDataRepository {
 
     if (!res.ok) {
       const text = await res.text();
-      throw new Error(`GitHub write failed for ${filename}: ${text}`);
+      const msg = `GitHub write failed for ${filename} [${res.status}]: ${text}`;
+      console.error("[GitHubRepository]", msg);
+      throw new Error(msg);
     }
 
     // Bust the Next.js cache so the website reflects changes immediately.
