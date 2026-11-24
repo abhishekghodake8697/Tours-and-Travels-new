@@ -1,10 +1,10 @@
 {
   "currency": "₹",
-  "perKmRate": 25,
+  "perKmRate": 30,
   "perKmMinDistance": 250,
   "dayPackagePrice": 6299,
   "dayPackageKmLimit": 250,
-  "extraKmRate": 26,
+  "extraKmRate": 28,
   "driverAllowancePerDay": 500,
   "nightHaltCharge": 700,
   "terms": [
