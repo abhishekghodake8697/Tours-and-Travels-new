@@ -1,6 +1,6 @@
 {
   "currency": "₹",
-  "perKmRate": 300,
+  "perKmRate": 30,
   "perKmMinDistance": 250,
   "dayPackagePrice": 6299,
   "dayPackageKmLimit": 250,
