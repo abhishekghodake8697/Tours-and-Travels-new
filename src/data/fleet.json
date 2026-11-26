@@ -107,7 +107,7 @@
     ],
     "luggageCapacity": "55+ Heavy Stowed Luggage",
     "driverIncluded": true,
-    "isActive": true,
+    "isActive": false,
     "image": "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&w=1200&q=80",
     "description": "Our flagship interstate cruiser for mega corporate conventions, university tours, and grand wedding entourage travel.",
     "badge": "Flagship Luxury",
