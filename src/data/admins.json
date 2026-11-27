@@ -7,5 +7,14 @@
     "role": "admin",
     "createdAt": "2026-01-01T00:00:00.000Z",
     "isActive": true
+  },
+  {
+    "id": "admin-1795793688021",
+    "username": "abhishek8697",
+    "passwordHash": "Abhishek@8697",
+    "displayName": "Abhishek Ghodake",
+    "role": "admin",
+    "createdAt": "2026-11-27T15:34:48.021Z",
+    "isActive": true
   }
 ]
