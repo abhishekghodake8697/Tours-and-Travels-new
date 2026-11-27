@@ -27,7 +27,7 @@ export function FareCalculator({
   buses,
   business,
 }: FareCalculatorProps) {
-  const [distanceKm, setDistanceKm] = useState<number>(250);
+  const [distanceKm, setDistanceKm] = useState<number>(300);
   const [selectedModel, setSelectedModel] = useState<"day_package" | "per_km">(
     "day_package"
   );
@@ -45,7 +45,7 @@ export function FareCalculator({
     customDayPackage
   );
 
-  const presets = [100, 180, 250, 350, 500];
+  const presets = [100, 180, 300, 400, 500];
 
   const estimatedTotal =
     selectedModel === "day_package"
@@ -147,7 +147,7 @@ export function FareCalculator({
                   : "bg-slate-800/80 text-slate-300 hover:bg-slate-700 border border-slate-700"
               }`}
             >
-              {preset} KM {preset === 250 && "⭐ (Day Tour Limit)"}
+              {preset} KM {preset === 300 && "⭐ (Day Tour Limit)"}
             </button>
           ))}
         </div>
@@ -167,7 +167,7 @@ export function FareCalculator({
           {distanceKm <= rates.dayPackageKmLimit && (
             <div className="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-emerald-500 text-slate-950 text-[10px] font-extrabold uppercase tracking-wide flex items-center gap-1 shadow-md">
               <TrendingDown className="w-3 h-3" />
-              Best Value for &lt;= 250 KM
+              Best Value for &lt;= 300 KM
             </div>
           )}
 
@@ -187,13 +187,13 @@ export function FareCalculator({
               </h4>
             </div>
             <span className="text-xs px-2 py-0.5 rounded bg-white/5 text-amber-300 font-semibold">
-              Up to 250 KM & 12 Hrs
+              Up to 300 KM & 12 Hrs
             </span>
           </div>
 
           <div className="space-y-1.5 text-xs text-slate-300 pb-3 border-b border-white/5">
             <div className="flex justify-between">
-              <span>Base Day Package (250 KM):</span>
+              <span>Base Day Package (300 KM):</span>
               <span className="font-bold text-white">
                 ₹{calculation.dayPackage.basePackagePrice.toLocaleString("en-IN")}
               </span>

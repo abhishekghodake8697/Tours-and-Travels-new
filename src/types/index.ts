@@ -62,6 +62,7 @@ export interface Bus {
   badge?: string;
   customPerKmRate?: number;
   customDayPackagePrice?: number;
+  dayPackageKmLimit?: number | null;
 }
 
 export interface GalleryItem {

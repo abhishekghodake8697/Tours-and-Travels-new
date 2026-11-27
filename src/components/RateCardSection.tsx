@@ -36,7 +36,7 @@ export function RateCardSection({
           Clear, Honest Rates With Zero Hidden Surprises
         </h2>
         <p className="text-sm sm:text-base text-slate-300">
-          Choose between our all-inclusive Fixed 250 KM Day Package or standard Per-Kilometer billing. All vehicles come with professional highway drivers.
+          Choose between our all-inclusive Fixed 300 KM Day Package or standard Per-Kilometer billing. All vehicles come with professional highway drivers.
         </p>
       </div>
 
@@ -58,7 +58,7 @@ export function RateCardSection({
                   Fixed Day Package
                 </h3>
                 <span className="text-xs text-amber-300 font-semibold">
-                  Journeys within ~250 KM
+                  Journeys within ~300 KM
                 </span>
               </div>
             </div>
@@ -119,7 +119,7 @@ export function RateCardSection({
               href="#enquiry"
               className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm shadow-xl shadow-amber-400/20 transition-all hover:scale-[1.01]"
             >
-              <span>Book 250 KM Day Package</span>
+              <span>Book 300 KM Day Package</span>
             </a>
           </div>
         </div>
