@@ -23,6 +23,7 @@ import {
   HomeContent,
   Enquiry,
 } from "@/types";
+import { AdminUser } from "@/lib/auth";
 import { IDataRepository } from "./types";
 
 // Compile-time fallbacks (the JSON files committed in src/data/)
@@ -33,6 +34,7 @@ import defaultServices from "@/data/services.json";
 import defaultGallery from "@/data/gallery.json";
 import defaultHome from "@/data/home.json";
 import defaultEnquiries from "@/data/enquiries.json";
+import defaultAdmins from "@/data/admins.json";
 
 
 export class GitHubRepository implements IDataRepository {
@@ -333,5 +335,16 @@ export class GitHubRepository implements IDataRepository {
     if (filtered.length === enquiries.length) return false;
     await this.writeFile("enquiries.json", filtered);
     return true;
+  }
+
+  // ── Admins ────────────────────────────────────────────────────────────────
+
+  async getAdmins(): Promise<AdminUser[]> {
+    return this.readFile("admins.json", defaultAdmins as AdminUser[]);
+  }
+
+  async saveAdmins(admins: AdminUser[]): Promise<AdminUser[]> {
+    await this.writeFile("admins.json", admins);
+    return admins;
   }
 }

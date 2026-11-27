@@ -1,38 +1,63 @@
 import { cookies, headers } from "next/headers";
 import { createTokenWeb, verifyTokenWeb } from "./token-utils";
+import { GitHubRepository } from "./repository/github-repository";
 
 export const ADMIN_COOKIE_NAME = "rw_admin_session";
-export const DEFAULT_ADMIN_PASSWORD =
-  process.env.ADMIN_PASSWORD || "admin123";
 
-/**
- * Creates a signed session token
- */
-export async function createSessionToken(): Promise<string> {
-  const timestamp = Date.now().toString();
-  return await createTokenWeb(timestamp);
+export interface AdminUser {
+  id: string;
+  username: string;
+  passwordHash: string;
+  displayName: string;
+  role: string;
+  createdAt: string;
+  isActive: boolean;
 }
 
 /**
- * Validates session token
+ * Creates a signed session token containing the admin username
+ */
+export async function createSessionToken(username: string): Promise<string> {
+  const payload = `${Date.now()}:${username}`;
+  return await createTokenWeb(payload);
+}
+
+/**
+ * Validates session token - returns username if valid, null otherwise
  */
 export async function validateSessionToken(
   token: string | undefined | null
-): Promise<boolean> {
+): Promise<string | null> {
   return await verifyTokenWeb(token);
 }
 
 /**
- * Verify given password against configured admin password
+ * Verify username + password against stored admins
+ * Returns the AdminUser on success, null on failure
  */
-export function verifyPassword(inputPassword: string): boolean {
-  if (!inputPassword) return false;
-  const expected = process.env.ADMIN_PASSWORD || DEFAULT_ADMIN_PASSWORD;
-  return inputPassword.trim() === expected.trim();
+export async function verifyCredentials(
+  username: string,
+  password: string
+): Promise<AdminUser | null> {
+  if (!username || !password) return null;
+
+  try {
+    const repo = new GitHubRepository();
+    const admins = await repo.getAdmins();
+    const admin = admins.find(
+      (a) =>
+        a.isActive &&
+        a.username.trim().toLowerCase() === username.trim().toLowerCase() &&
+        a.passwordHash === password.trim()
+    );
+    return admin ?? null;
+  } catch {
+    return null;
+  }
 }
 
 /**
- * Check if current request is authenticated admin (for Server Components & Route Handlers)
+ * Check if current request is authenticated admin
  */
 export async function isAuthenticatedAdmin(): Promise<boolean> {
   try {
@@ -52,4 +77,14 @@ export async function isAuthenticatedAdmin(): Promise<boolean> {
   } catch {
     return false;
   }
+}
+
+/** SUPER ADMIN key — stored in env, never in the repo */
+export function getSuperAdminKey(): string {
+  return process.env.SUPER_ADMIN_KEY ?? "super-secret-change-me";
+}
+
+export function verifySuperAdminKey(key: string): boolean {
+  if (!key) return false;
+  return key.trim() === getSuperAdminKey();
 }

@@ -9,13 +9,14 @@ import {
   ArrowRight,
   ShieldAlert,
   Loader2,
-  CheckCircle2,
   KeyRound,
   Eye,
   EyeOff,
+  User,
 } from "lucide-react";
 
 function LoginForm() {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -33,7 +34,7 @@ function LoginForm() {
       const res = await fetch("/api/admin/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ username, password }),
       });
 
       const data = await res.json();
@@ -42,7 +43,6 @@ function LoginForm() {
         throw new Error(data.error || "Login failed");
       }
 
-      // Successfully authenticated
       router.push(from);
       router.refresh();
     } catch (err: any) {
@@ -64,14 +64,38 @@ function LoginForm() {
         </div>
       )}
 
-      <form onSubmit={handleLogin} className="space-y-6">
+      <form onSubmit={handleLogin} className="space-y-5">
+        {/* Username */}
+        <div>
+          <label
+            htmlFor="username"
+            className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2 flex items-center gap-1.5"
+          >
+            <User className="w-3.5 h-3.5 text-amber-400" />
+            <span>Admin Username</span>
+          </label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            required
+            autoFocus
+            autoComplete="username"
+            placeholder="Enter your username..."
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
+          />
+        </div>
+
+        {/* Password */}
         <div>
           <label
             htmlFor="password"
             className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2 flex items-center gap-1.5"
           >
             <KeyRound className="w-3.5 h-3.5 text-amber-400" />
-            <span>Admin Passcode</span>
+            <span>Password</span>
           </label>
 
           <div className="relative">
@@ -80,8 +104,8 @@ function LoginForm() {
               name="password"
               type={showPassword ? "text" : "password"}
               required
-              autoFocus
-              placeholder="Enter admin password..."
+              autoComplete="current-password"
+              placeholder="Enter your password..."
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 pr-10"
@@ -101,17 +125,6 @@ function LoginForm() {
           </div>
         </div>
 
-        {/* Quick Demo Helper Hint */}
-        <div className="p-3 rounded-xl bg-white/5 border border-white/5 text-[11px] text-slate-400 space-y-1">
-          <div className="text-amber-400 font-bold flex items-center gap-1">
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>Default Access Passcode</span>
-          </div>
-          <p>
-            Default password: <code className="text-white font-mono bg-slate-800 px-1.5 py-0.5 rounded">admin123</code> (Configurable via <code className="text-slate-300">ADMIN_PASSWORD</code> environment variable).
-          </p>
-        </div>
-
         <div>
           <button
             type="submit"
@@ -121,7 +134,7 @@ function LoginForm() {
             {loading ? (
               <>
                 <Loader2 className="w-4 h-4 animate-spin" />
-                <span>Verifying session...</span>
+                <span>Verifying...</span>
               </>
             ) : (
               <>
@@ -160,7 +173,7 @@ export default function AdminLoginPage() {
           Admin Control Portal
         </h2>
         <p className="text-sm text-slate-400">
-          Manage bus fleet, rates, bookings & website content
+          Sign in with your admin credentials to continue
         </p>
       </div>
 

@@ -16,7 +16,11 @@ function bufToHex(buf: ArrayBuffer): string {
     .join("");
 }
 
-export async function createTokenWeb(timestampStr: string): Promise<string> {
+/**
+ * payload format: "timestamp:username"
+ * token format:   "timestamp:username.signature"
+ */
+export async function createTokenWeb(payload: string): Promise<string> {
   const key = await crypto.subtle.importKey(
     "raw",
     strToBuf(SESSION_SECRET),
@@ -27,25 +31,36 @@ export async function createTokenWeb(timestampStr: string): Promise<string> {
   const signatureBuf = await crypto.subtle.sign(
     "HMAC",
     key,
-    strToBuf(timestampStr)
+    strToBuf(payload)
   );
-  return `${timestampStr}.${bufToHex(signatureBuf)}`;
+  return `${payload}.${bufToHex(signatureBuf)}`;
 }
 
+/**
+ * Returns the username embedded in the token if valid, otherwise null.
+ * No server-side expiry — session is controlled by the browser cookie lifetime.
+ */
 export async function verifyTokenWeb(
   token: string | undefined | null
-): Promise<boolean> {
-  if (!token) return false;
-  const parts = token.split(".");
-  if (parts.length !== 2) return false;
+): Promise<string | null> {
+  if (!token) return null;
 
-  const [timestampStr, signature] = parts;
-  const timestamp = parseInt(timestampStr, 10);
-  if (isNaN(timestamp)) return false;
+  // token = "timestamp:username.signature"
+  const lastDot = token.lastIndexOf(".");
+  if (lastDot === -1) return null;
 
-  // 7 days expiration
-  const maxAge = 7 * 24 * 60 * 60 * 1000;
-  if (Date.now() - timestamp > maxAge) return false;
+  const payload = token.slice(0, lastDot);
+  const signature = token.slice(lastDot + 1);
+
+  // payload must be "timestamp:username"
+  const colonIdx = payload.indexOf(":");
+  if (colonIdx === -1) return null;
+
+  const tsStr = payload.slice(0, colonIdx);
+  const username = payload.slice(colonIdx + 1);
+
+  const timestamp = parseInt(tsStr, 10);
+  if (isNaN(timestamp) || !username) return null;
 
   try {
     const key = await crypto.subtle.importKey(
@@ -55,15 +70,12 @@ export async function verifyTokenWeb(
       false,
       ["sign"]
     );
-    const expectedBuf = await crypto.subtle.sign(
-      "HMAC",
-      key,
-      strToBuf(timestampStr)
-    );
+    const expectedBuf = await crypto.subtle.sign("HMAC", key, strToBuf(payload));
     const expectedHex = bufToHex(expectedBuf);
 
-    return signature === expectedHex;
+    if (signature !== expectedHex) return null;
+    return username;
   } catch {
-    return false;
+    return null;
   }
 }
